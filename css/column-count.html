@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text - Overflow</title>
+    <title>Column-Count</title>
     <style>
         body{
             padding:20px;
         }
+
         #box{
             width:600px;
-            border:2px solid #000;
-            padding:10px;
-            text-wrap:nowrap;
-            overflow:hidden;
-            text-overflow:ellipsis;
+            /* border:2px solid brown; */
+            padding:20px;
+            /* column-count:5; */
+            column-gap:30px;
+            /* column-rule-width:4px;
+            column-rule-color:cadetblue;
+            column-rule-style:double; */
+            /* short hand property */
+            column-rule:4px double cadetblue;
+            column-width:80px;
+        }
+
+        h2{
+            column-span:none;
         }
     </style>
 </head>
-
 <body>
-    <h2>Text Overflow</h2>
+    <h1>Column-Count</h1>
     <div id="box">
+        <h2>Sub heading goes here Sub heading goes here</h2>
         Lorem is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the
         1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -30,5 +39,4 @@
         remaining essentially unchanged.
     </div>
 </body>
-
 </html>
